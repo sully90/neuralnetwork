@@ -21,7 +21,7 @@ The output file contains five columns, the four above plus the predicted halo ba
 
 # Modifications to the code #
 
-It is likely that users will need to modify certain elements of the code to better suit their work. While no guarantee of assistance is given, please feel free to logde an issue on this repository or contact the authors directly.
+It is likely that users will need to modify certain elements of the code to better suit their work. While no guarantee of assistance is given, please feel free to create an issue on this repository or contact the authors directly.
 
 # License #
 
