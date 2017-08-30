@@ -1,6 +1,6 @@
 # README #
 
-This package contains the Artificial Neural Network developed and trained in Sullivan et al. 2017 <https://arxiv.org/abs/1707.01427>, to constrain the halo baryon fraction. No external libraries are required, simply type 'make' to compile.
+This package contains the Artificial Neural Network developed and trained in Sullivan et al. 2017 <https://arxiv.org/abs/1707.01427>, written in c++ and used to constrain the halo baryon fraction. No external libraries are required, simply type 'make' to compile (Linux/Mac).
 
 # Connection Weights #
 
