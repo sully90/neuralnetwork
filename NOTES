@@ -1,3 +1,0 @@
-
-# Example prediction file. The cols are: log_10(ftidal), log_10(xHII), log_10(T(gas)/Tvir), T/|U|
-# Note that the baryon fraction returned is scaled in the range [-1, 1]. To return to original value: fb_unscaled = ((fb_scaled/2.) + 0.5) * 0.75
