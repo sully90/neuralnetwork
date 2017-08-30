@@ -9,12 +9,13 @@ The connections weights file is included in weights/NN50.weights. The code loads
 # Running the code #
 
 To run the code in its default state, you must execute the binary from the code directory. The mandatory command line arguments are:
+
 -f: Filename containing data to make predictions for (see example file fb_00106_mw.predict)
 -o: Filename to write results.
 
 The prediction file should be formatted as shown in the example, where the columns are:
 
-log_10(ftidal), log_10(xHII), log_10(T(gas)/Tvir), T/|U|
+log_10(ftidal), log_10(xHII), log_10(T(gas)/Tvir), log_10(T/|U|)
 
 The output file contains five columns, the four above plus the predicted halo baryon fraction in units of the cosmic mean (assuming a WMAP7 cosmology).
 
