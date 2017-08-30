@@ -13,7 +13,7 @@ To run the code in its default state, you must execute the binary from the code 
 -f: Filename containing data to make predictions for (see example file fb_00106_mw.predict)
 -o: Filename to write results.
 
-The prediction file should be formatted as shown in the example, where the columns are:
+The prediction file should be formatted as shown in the example, where the columns are (for each individual halo):
 
 log_10(ftidal), log_10(xHII), log_10(T(gas)/Tvir), log_10(T/|U|)
 
