@@ -1,9 +1,9 @@
-// TrainingData.cpp
-#include "TrainingData.h"
+// PredictionData.cpp
+#include "PredictionData.h"
 
 using namespace std;
 
-void TrainingData::getTopology(vector<unsigned> &topology)
+void PredictionData::getTopology(vector<unsigned> &topology)
 {
     string line;
     string label;
@@ -24,12 +24,12 @@ void TrainingData::getTopology(vector<unsigned> &topology)
     return;
 }
 
-TrainingData::TrainingData(const string filename)
+PredictionData::PredictionData(const string filename)
 {
     m_trainingDataFile.open(filename.c_str());
 }
 
-unsigned TrainingData::getNextInputs(vector<double> &inputVals)
+unsigned PredictionData::getNextInputs(vector<double> &inputVals)
 {
     inputVals.clear();
 
@@ -49,7 +49,7 @@ unsigned TrainingData::getNextInputs(vector<double> &inputVals)
     return inputVals.size();
 }
 
-unsigned TrainingData::getTargetOutputs(vector<double> &targetOutputVals)
+unsigned PredictionData::getTargetOutputs(vector<double> &targetOutputVals)
 {
     targetOutputVals.clear();
 
@@ -69,7 +69,7 @@ unsigned TrainingData::getTargetOutputs(vector<double> &targetOutputVals)
     return targetOutputVals.size();
 }
 
-void TrainingData::rewind(void)
+void PredictionData::rewind(void)
 {
     m_trainingDataFile.clear();
     m_trainingDataFile.seekg(0);

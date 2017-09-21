@@ -5,7 +5,7 @@ CC_FLAGS = -w -O2
 # File names
 EXEC = neural-net
 SOURCES = $(wildcard *.cpp)
-OBJECTS = Neuron.o TrainingData.o main.o
+OBJECTS = Neuron.o PredictionData.o main.o
  
 # Main target
 $(EXEC): $(OBJECTS)

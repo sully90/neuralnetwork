@@ -11,7 +11,7 @@
 #include <algorithm>
 
 #include "Neuron.h"
-#include "TrainingData.h"
+#include "PredictionData.h"
 
 #define PI 3.14159265
 
@@ -296,7 +296,7 @@ double RandomFloat(double min, double max)
 
 Net trainNeuralNetwork(int niter, const string trainingFile, bool printStats)
 {
-    TrainingData trainData(trainingFile);
+    PredictionData trainData(trainingFile);
 
     vector<unsigned> topology;
     trainData.getTopology(topology);
@@ -439,7 +439,7 @@ int main(int argc, char ** argv)
         outfile.open(outputFile);
 
         // Load the prediction data
-        TrainingData inputData(predictionFile);
+        PredictionData inputData(predictionFile);
 
         vector<double> inputVals, resultVals;
         int trainingPass = 0;

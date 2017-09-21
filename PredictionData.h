@@ -1,6 +1,6 @@
-// TrainingData.h
-#ifndef TRAINING_DATA_H
-#define TRAINING_DATA_H
+// PREDICTION.h
+#ifndef PREDICTION_DATA_H
+#define PREDICTION_DATA_H
 
 #include <vector>
 #include <iostream>
@@ -9,10 +9,10 @@
 
 using namespace std;
 
-class TrainingData
+class PredictionData
 {
 public:
-    TrainingData(const string filename);
+    PredictionData(const string filename);
     bool isEof(void) { return m_trainingDataFile.eof(); }
     void close(void) { m_trainingDataFile.close(); }
     void getTopology(vector<unsigned> &topology);
